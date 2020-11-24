@@ -1,0 +1,4 @@
+* TODO add some org goodness
+** TODO To GTD or not to GTD
+** TODO organize subsections into separate git repos
+** TODO set up management with something like mr (multiple repos)
