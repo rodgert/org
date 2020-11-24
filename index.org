@@ -1,15 +1,24 @@
 * Welcome to rodgertq's Almighty org-tree
+* Things that need to be done here
+** TODO Index some org goodness
+** DONE Setup mr (multiple-repos) for all of this
+   CLOSED: [2020-11-24 Tue 14:30]
+   :LOGBOOK:
+   CLOCK: [2020-11-24 Tue 13:26]--[2020-11-24 Tue 14:30] =>  1:04
+   :END:
+
 * Work I Do
 ** I sometimes work on things which are [[file:redhat/index.org][Red Hat]] Proprietary
 ** Most things are [[file:oss/index.org][open source]]
+** Or they are
 ** Some things are [[file:personal/index.org][personal]]
 
-* Things that need to be done
-** TODO Index some org goodness
-** TODO Setup mr (multiple-repos) for all of this
+
 
 * Developement projects
 ** We do all of our work in [[file:./../devel/index.org][devel]]
+
+
 * Templates, we have templates
 ** For Ignoring things in git
    [[file:templates/git/ignore/Emacs.gitignore][emacs]]
@@ -19,3 +28,26 @@
 ** For [[file:redhat/howto/index.org][Red Hat]]
 ** For specific open source projects
 *** How to do [[file:./../devel/gcc/howto/index.org][GCC]] things
+
+* We keep our configurations nice and tidy
+** Most dot files are kept in a git repo in [[file:./../.dotfiles/index.org][~/.dotfiles]]
+   symlinked into ~/ using GNU stow, ex.
+#+begin_src sh
+  cd ~ && stow -d .dotfiles foo
+#+end_src
+** Some dot files containing sekretz are kept in a git repo in [[file:./../.dot_private/index.org][~/.dot_private]]
+#+begin_src sh
+  cd ~ && stow -d .dot_private bar
+#+end_src
+** The configured environment includes -
+*** git
+    We keep git configuration private currently to avoid leaking user.email
+#+begin_src sh
+  cd ~ && stow -d .dot_private git
+#+end_src
+*** myrepos
+    We use myrepos to manage all of our various git repos. We also keep this
+    private.
+#+begin_src sh
+  cd ~ && stow -d .dot_private myrepos
+#+end_src
