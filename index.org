@@ -1,1 +1,21 @@
-* TODO Index some org goodness
+* Welcome to rodgertq's Almighty org-tree
+* Work I Do
+** I sometimes work on things which are [[file:redhat/index.org][Red Hat]] Proprietary
+** Most things are [[file:oss/index.org][open source]]
+** Some things are [[file:personal/index.org][personal]]
+
+* Things that need to be done
+** TODO Index some org goodness
+** TODO Setup mr (multiple-repos) for all of this
+
+* Developement projects
+** We do all of our work in [[file:./../devel/index.org][devel]]
+* Templates, we have templates
+** For Ignoring things in git
+   [[file:templates/git/ignore/Emacs.gitignore][emacs]]
+
+* How to do things
+** In [[file:howto/index.org][general]]
+** For [[file:redhat/howto/index.org][Red Hat]]
+** For specific open source projects
+*** How to do [[file:./../devel/gcc/howto/index.org][GCC]] things

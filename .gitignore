@@ -1,4 +1,10 @@
 # -*- mode: gitignore; -*-
+
+# Ignore dirs managed elsewhere
+oss/
+redhat/
+
+# Standard Emacs Ignore's
 *~
 \#*\#
 /.emacs.desktop
