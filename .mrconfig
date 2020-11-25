@@ -1,0 +1,12 @@
+
+[personal]
+checkout = git clone 'git@github.com:rodgert/personal_org.git' 'personal'
+
+[oss]
+checkout = git clone 'git@github.com:rodgert/oss_org.git' 'oss'
+
+[wg21]
+checkout = git clone 'git@github.com:rodgert/wg21_org.git' 'wg21'
+
+[wg21/nonpublic]
+checkout = git clone 'git@github.com:rodgert/wg21_org_nonpublic.git' 'nonpublic'
